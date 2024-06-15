@@ -38,6 +38,16 @@ const BrandSlider = ({ dark }) => {
                   <img src="assets/images/brand/brand6.svg" alt="image" />
                 </div>
               </SwiperSlide>
+              <SwiperSlide className="col-lg-12">
+                <div className="brand-thumb">
+                  <img src="assets/images/brand/brand6.svg" alt="image" />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className="col-lg-12">
+                <div className="brand-thumb">
+                  <img src="assets/images/brand/brand6.svg" alt="image" />
+                </div>
+              </SwiperSlide>
             </Swiper>
           </div>
         </div>

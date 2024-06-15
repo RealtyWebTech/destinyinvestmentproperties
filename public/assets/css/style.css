@@ -3410,7 +3410,7 @@ section.banner-section.style-three .banner-carousel .slide-item {
 
 .thrown-header-area.style-three::before {
   background: #fff;
-  width: 70%;
+  width: 100%;
   left: 0;
   right: 0;
   margin: auto;

@@ -31,28 +31,39 @@ export default Header;
 const Header1 = ({ dark }) => {
   return (
     <Fragment>
-      <TopBar />
+      {/* <TopBar /> */}
+      <MobileMenu />
+      <Sidebar />
+
       <div
-        className={`thrown-header-area ${dark ? "dark" : ""}`}
-        id={dark ? "navbar" : "sticky-header"}>
+        className={`thrown-header-area style-three ${dark ? "dark" : ""}`}
+        id={dark ? "navbar" : "sticky-header"}
+      >
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-2 col-md-6">
-              <div className={`header-logo ${dark ? "dark" : ""}`}>
-                <Link legacyBehavior href="/">
+            <div className="col-lg-3">
+              <div className="header-logo style-three">
+                <Link legacyBehavior href="/index-three">
                   <a>
-                    <img src="assets/images/logo.png" alt="" />
+                    <img
+                      src={
+                        dark
+                          ? "assets/images/logo.png"
+                          : "assets/images/logo2.png"
+                      }
+                      alt="image"
+                    />
                   </a>
                 </Link>
               </div>
             </div>
-            <div className="col-lg-6 col-md-6">
-              <div className={`thrown-menu ${dark ? "dark" : ""}`}>
+            <div className="col-lg-9">
+              <div className={`thrown-menu style-three ${dark ? "dark" : ""}`}>
                 <Nav />
               </div>
-            </div>
-            <div className="col-lg-4 col-md-6">
-              <div className="thrown-search-button">{/* <SearchBtn /> */}</div>
+              <div className="thrown-search-button style-three">
+                {/* <SearchBtn /> */}
+              </div>
             </div>
           </div>
           <div className="side-menu-info">
@@ -107,12 +118,13 @@ const Header3 = ({ dark }) => {
   return (
     <div
       className={`thrown-header-area style-three ${dark ? "dark" : ""}`}
-      id={dark ? "navbar" : "sticky-header"}>
+      id={dark ? "navbar" : "sticky-header"}
+    >
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-3">
             <div className="header-logo style-three">
-              <Link legacyBehavior href="/index-three">
+              <Link legacyBehavior href="/">
                 <a>
                   <img
                     src={
@@ -153,7 +165,8 @@ const Header4 = ({ dark }) => {
       <TopBar2 />
       <div
         className={`thrown-header-area style-five ${dark ? "dark" : ""}`}
-        id={dark ? "navbar" : "sticky-header"}>
+        id={dark ? "navbar" : "sticky-header"}
+      >
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-3">
@@ -305,7 +318,8 @@ const MobileMenu = () => {
               onClick={(e) => {
                 e.preventDefault();
                 thrownutility.sidebarToggle();
-              }}>
+              }}
+            >
               <i className="bi bi-justify-right" />
             </a>
           </div>
@@ -319,7 +333,7 @@ const Nav = () => {
   return (
     <ul>
       <li>
-        <a href="/index-three">Home</a>
+        <a href="/">Home</a>
       </li>
       <li>
         <Link legacyBehavior href="#">
@@ -327,11 +341,8 @@ const Nav = () => {
         </Link>
       </li>
       <li>
-        <a href="#">Service</a>
-      </li>
-      <li>
-        <Link legacyBehavior href="#">
-          Contact
+        <Link legacyBehavior href="deals">
+          Deals
         </Link>
       </li>
       <li>
