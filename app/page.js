@@ -60,20 +60,19 @@ const page = () => {
             <div className="col-lg-6 col-md-12">
               <div className="section-title">
                 <div className="section-sub-title about3">
-                  <h4>PROVIDE BETTER EXPERIENCES!</h4>
+                  <h4>PROVIDE BETTER EXPERIENCE!</h4>
                 </div>
                 <div className="section-main-title about3">
-                  <h2>Transforming businesses with </h2>
+                  <h2>Unlock Profitable Deals with</h2>
                   <h2>Enterprise League</h2>
                 </div>
               </div>
               <div className="about-content">
                 <div className="about-discribtion style-three">
                   <p>
-                    Quisque dignissim enim diam, eget pulvinar ex viverra id.
-                    Nulla a lobortis lectus, id volutpat magna. Morbi consequat
-                    porttitor fermentum. Nulla vestibulum tincidunt viverra.
-                    Vestibulum accumsan
+                    Discover exclusive opportunities to maximize profits. Join
+                    our network to access top deals instantly and elevate your
+                    business growth.
                   </p>
                 </div>
 
@@ -137,7 +136,7 @@ const page = () => {
                 <div className="contact-items-content">
                   <h6>Need Help? Call us</h6>
                   <h4>
-                    <a href="#">+91 458 654 528</a>
+                    <a href="#">  +44 7780453714</a>
                   </h4>
                 </div>
               </div>
@@ -173,7 +172,7 @@ const page = () => {
                   <div className="service-title style-three">
                     <h4>
                       <Link legacyBehavior href="service-details">
-                        Complete Overview
+                        Exclusive Deal Access
                       </Link>
                     </h4>
                   </div>
@@ -182,8 +181,8 @@ const page = () => {
                   </div>
                   <div className="serivice-discription style-three">
                     <p>
-                      Transmax is the world’s driving worldwide coordinations
-                      supplierwe uphold industry and exchange the worldwide
+                      Gain priority access to exclusive, high-profit investment
+                      opportunities before they hit the mainstream market.
                     </p>
                   </div>
                 </div>
@@ -208,7 +207,7 @@ const page = () => {
                   <div className="service-title style-three">
                     <h4>
                       <Link legacyBehavior href="service-details">
-                        Business Strategy Growth
+                        Personalized Investment Strategies
                       </Link>
                     </h4>
                   </div>
@@ -217,8 +216,9 @@ const page = () => {
                   </div>
                   <div className="serivice-discription style-three">
                     <p>
-                      Transmax is the world’s driving worldwide coordinations
-                      supplierwe uphold industry and exchange the worldwide
+                      Receive tailored investment strategies based on your
+                      unique financial goals and risk tolerance, crafted by our
+                      team of experts.
                     </p>
                   </div>
                 </div>
@@ -243,7 +243,7 @@ const page = () => {
                   <div className="service-title style-three">
                     <h4>
                       <Link legacyBehavior href="service-details">
-                        Smart Profile Integration
+                        Comprehensive Market Insights
                       </Link>
                     </h4>
                   </div>
@@ -252,8 +252,9 @@ const page = () => {
                   </div>
                   <div className="serivice-discription style-three">
                     <p>
-                      Transmax is the world’s driving worldwide coordinations
-                      supplierwe uphold industry and exchange the worldwide
+                      Stay ahead with in-depth market research and insights,
+                      helping you to identify trends and seize the best
+                      investment opportunities.
                     </p>
                   </div>
                 </div>
@@ -278,7 +279,7 @@ const page = () => {
                   <div className="service-title style-three">
                     <h4>
                       <Link legacyBehavior href="service-details">
-                        SEO Powered
+                        Expert Support and Guidance
                       </Link>
                     </h4>
                   </div>
@@ -287,8 +288,9 @@ const page = () => {
                   </div>
                   <div className="serivice-discription style-three">
                     <p>
-                      Transmax is the world’s driving worldwide coordinations
-                      supplierwe uphold industry and exchange the worldwide
+                      Access 24/7 support from our team of seasoned investment
+                      professionals, providing you with expert guidance every
+                      step of the way
                     </p>
                   </div>
                 </div>
@@ -313,7 +315,7 @@ const page = () => {
                   <div className="service-title style-three">
                     <h4>
                       <Link legacyBehavior href="service-details">
-                        Solution Regenerating Easily
+                        Community of Investors
                       </Link>
                     </h4>
                   </div>
@@ -322,8 +324,9 @@ const page = () => {
                   </div>
                   <div className="serivice-discription style-three">
                     <p>
-                      Transmax is the world’s driving worldwide coordinations
-                      supplierwe uphold industry and exchange the worldwide
+                      Join a vibrant community of like-minded investors to share
+                      insights, discuss strategies, and collaborate on
+                      high-potential deals.
                     </p>
                   </div>
                 </div>
@@ -347,7 +350,7 @@ const page = () => {
                 <div className="service-conten style-three">
                   <div className="service-title style-three">
                     <h4>
-                      <a href="#">Customer Care &amp; Support</a>
+                      <a href="#">Comprehensive Due Diligence</a>
                     </h4>
                   </div>
                   <div className="underline">
@@ -355,8 +358,9 @@ const page = () => {
                   </div>
                   <div className="serivice-discription style-three">
                     <p>
-                      Transmax is the world’s driving worldwide coordinations
-                      supplierwe uphold industry and exchange the worldwide
+                      Access detailed reports and analysis to ensure every
+                      investment decision is well-informed, ensuring a
+                      diversified portfolio with minimal risk
                     </p>
                   </div>
                 </div>
@@ -386,14 +390,14 @@ const page = () => {
       {/*==================================================*/}
       {/* Start Thrown Project Area */}
       {/*==================================================*/}
-      <Work />
+      {/* <Work /> */}
       {/*==================================================*/}
       {/* End Thrown Project Area */}
       {/*==================================================*/}
       {/*==================================================*/}
       {/* Start Thrown Sucsess Area */}
       {/*==================================================*/}
-      <Sucsess />
+      {/* <Sucsess /> */}
       {/*==================================================*/}
       {/* End Thrown Sucsess Area */}
       {/*==================================================*/}

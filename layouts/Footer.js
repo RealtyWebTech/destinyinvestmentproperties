@@ -15,16 +15,17 @@ const Footer = () => {
                 </Link>
               </div>
               <div className="footer-wiget-text">
-                <h4>Say Hello!</h4>
+                {/* <h5>Source Deals Faster, Invest Smarter</h5> */}
               </div>
-              <div className="footer-shape-title">
-                <h3>Discover our app</h3>
+              <div className="footer-shape-title pt-10"></div>
+              <div className="footer-wiget-shape">
+                <p>
+                  Company registered in England & Wales. Company Number:
+                  15722751
+                </p>
               </div>
               <div className="footer-wiget-shape">
-                <img src="assets/images/footer/Google-Play.png" alt="" />
-              </div>
-              <div className="footer-wiget-shape">
-                <img src="assets/images/footer/Play-Store.png" alt="" />
+                {/* <img src="assets/images/footer/Play-Store.png" alt="" /> */}
               </div>
             </div>
           </div>
@@ -39,13 +40,7 @@ const Footer = () => {
                     <a href="#"> About us</a>
                   </li>
                   <li>
-                    <a href="#"> Meet our team</a>
-                  </li>
-                  <li>
-                    <a href="#"> Case stories</a>
-                  </li>
-                  <li>
-                    <a href="#"> Latest news</a>
+                    <a href="#"> Deals</a>
                   </li>
                   <li>
                     <a href="#"> Contact</a>
@@ -101,10 +96,10 @@ const Footer = () => {
               <div className="footer-widget-contct-menu">
                 <ul>
                   <li>
-                    <a href="#">( 800 ) 160-616481</a>
+                    <a href="#">(+44) 7780453714</a>
                   </li>
                   <li className="line">
-                    <a href="#">example@gmail.com</a>
+                    <a href="#">customer@destinyinvestmentproperties.co.uk</a>
                   </li>
                   <li>
                     <a href="#">175 10h Street, Office 375 Berlin, De 21562</a>
@@ -118,7 +113,8 @@ const Footer = () => {
           <div className="col-lg-6 col-md-12">
             <div className="copyright-text">
               <p>
-                Copyright © <a href="#">Wazeem</a> All Rights Reserved.
+                Copyright © <a href="#">Destiny Investment Properties Ltd.</a>{" "}
+                All Rights Reserved.
               </p>
             </div>
           </div>

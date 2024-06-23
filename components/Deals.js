@@ -20,7 +20,7 @@ function Deals({ dark }) {
         {/* Photo Grid */}
         <div className="row">
           <div className="column">
-            <div className="project-thumb">
+            <div className="project-thumb ">
               <img
                 src="assets/images/properties/prop (1).png"
                 alt="image"
