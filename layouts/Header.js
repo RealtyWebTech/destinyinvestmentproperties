@@ -37,13 +37,12 @@ const Header1 = ({ dark }) => {
 
       <div
         className={`thrown-header-area style-three ${dark ? "dark" : ""}`}
-        id={dark ? "navbar" : "sticky-header"}
-      >
+        id={dark ? "navbar" : "sticky-header"}>
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-3">
               <div className="header-logo style-three">
-                <Link legacyBehavior href="/index-three">
+                <Link legacyBehavior href="/">
                   <a>
                     <img
                       src={
@@ -86,7 +85,7 @@ const Header2 = ({ dark }) => {
         <div className="row align-items-center">
           <div className="col-lg-3">
             <div className="header-logo style-two">
-              <Link legacyBehavior href="/index-three">
+              <Link legacyBehavior href="/">
                 <a>
                   <img src="assets/images/logo.png" alt="logo" />
                 </a>
@@ -118,8 +117,7 @@ const Header3 = ({ dark }) => {
   return (
     <div
       className={`thrown-header-area style-three ${dark ? "dark" : ""}`}
-      id={dark ? "navbar" : "sticky-header"}
-    >
+      id={dark ? "navbar" : "sticky-header"}>
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-3">
@@ -165,8 +163,7 @@ const Header4 = ({ dark }) => {
       <TopBar2 />
       <div
         className={`thrown-header-area style-five ${dark ? "dark" : ""}`}
-        id={dark ? "navbar" : "sticky-header"}
-      >
+        id={dark ? "navbar" : "sticky-header"}>
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-3">
@@ -318,8 +315,7 @@ const MobileMenu = () => {
               onClick={(e) => {
                 e.preventDefault();
                 thrownutility.sidebarToggle();
-              }}
-            >
+              }}>
               <i className="bi bi-justify-right" />
             </a>
           </div>
@@ -336,25 +332,25 @@ const Nav = () => {
         <a href="/">Home</a>
       </li>
       <li>
-        <Link legacyBehavior href="#">
-          About
-        </Link>
-      </li>
-      <li>
         <Link legacyBehavior href="deals">
           Deals
         </Link>
       </li>
       <li>
-        <Link legacyBehavior href="#">
-          Contact
+        <Link legacyBehavior href="about">
+          About
         </Link>
       </li>
       <li>
-        <Link legacyBehavior href="#">
+        <Link legacyBehavior href="contact">
           Contact
         </Link>
       </li>
+      {/* <li>
+        <Link legacyBehavior href="#">
+          Contact
+        </Link>
+      </li> */}
     </ul>
   );
 };

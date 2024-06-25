@@ -27,7 +27,7 @@ const page = () => {
                   <div className="slider-main-title style-three">
                     <h1>Revolutionizing </h1>
                     <h1>Deal Sourcing</h1>
-                    <h1>Success Future</h1>
+                    <h1>for Future Success</h1>
                   </div>
                   <div className="thrown-btn slider three">
                     <a className="header-button">
@@ -84,7 +84,7 @@ const page = () => {
                     />
                   </div>
                   <div className="about-bottom-title">
-                    <h4>Max Benjamin</h4>
+                    <h4>CEO Name</h4>
                     <span>Director</span>
                   </div>
                   <div className="about-signiture">
@@ -136,7 +136,7 @@ const page = () => {
                 <div className="contact-items-content">
                   <h6>Need Help? Call us</h6>
                   <h4>
-                    <a href="#">  +44 7780453714</a>
+                    <a href="#"> +44 7780453714</a>
                   </h4>
                 </div>
               </div>
