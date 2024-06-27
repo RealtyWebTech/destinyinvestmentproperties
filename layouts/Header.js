@@ -31,28 +31,38 @@ export default Header;
 const Header1 = ({ dark }) => {
   return (
     <Fragment>
-      <TopBar />
+      {/* <TopBar /> */}
+      <MobileMenu />
+      <Sidebar />
+
       <div
-        className={`thrown-header-area ${dark ? "dark" : ""}`}
+        className={`thrown-header-area style-three ${dark ? "dark" : ""}`}
         id={dark ? "navbar" : "sticky-header"}>
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-2 col-md-6">
-              <div className={`header-logo ${dark ? "dark" : ""}`}>
+            <div className="col-lg-3">
+              <div className="header-logo style-three">
                 <Link legacyBehavior href="/">
                   <a>
-                    <img src="assets/images/logo.png" alt="" />
+                    <img
+                      src={
+                        dark
+                          ? "assets/images/logo.png"
+                          : "assets/images/logo2.png"
+                      }
+                      alt="image"
+                    />
                   </a>
                 </Link>
               </div>
             </div>
-            <div className="col-lg-6 col-md-6">
-              <div className={`thrown-menu ${dark ? "dark" : ""}`}>
+            <div className="col-lg-9">
+              <div className={`thrown-menu style-three ${dark ? "dark" : ""}`}>
                 <Nav />
               </div>
-            </div>
-            <div className="col-lg-4 col-md-6">
-              <div className="thrown-search-button">{/* <SearchBtn /> */}</div>
+              <div className="thrown-search-button style-three">
+                {/* <SearchBtn /> */}
+              </div>
             </div>
           </div>
           <div className="side-menu-info">
@@ -75,7 +85,7 @@ const Header2 = ({ dark }) => {
         <div className="row align-items-center">
           <div className="col-lg-3">
             <div className="header-logo style-two">
-              <Link legacyBehavior href="/index-three">
+              <Link legacyBehavior href="/">
                 <a>
                   <img src="assets/images/logo.png" alt="logo" />
                 </a>
@@ -112,7 +122,7 @@ const Header3 = ({ dark }) => {
         <div className="row align-items-center">
           <div className="col-lg-3">
             <div className="header-logo style-three">
-              <Link legacyBehavior href="/index-three">
+              <Link legacyBehavior href="/">
                 <a>
                   <img
                     src={
@@ -319,31 +329,28 @@ const Nav = () => {
   return (
     <ul>
       <li>
-        <a href="/index-three">Home</a>
+        <a href="/">Home</a>
       </li>
       <li>
-        <Link legacyBehavior href="#">
+        <Link legacyBehavior href="deals">
+          Deals
+        </Link>
+      </li>
+      <li>
+        <Link legacyBehavior href="about">
           About
         </Link>
       </li>
       <li>
-        <a href="#">Service</a>
-      </li>
-      <li>
-        <Link legacyBehavior href="#">
+        <Link legacyBehavior href="contact">
           Contact
         </Link>
       </li>
-      <li>
+      {/* <li>
         <Link legacyBehavior href="#">
           Contact
         </Link>
-      </li>
-      <li>
-        <Link legacyBehavior href="#">
-          Contact
-        </Link>
-      </li>
+      </li> */}
     </ul>
   );
 };

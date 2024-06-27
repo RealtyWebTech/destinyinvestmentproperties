@@ -1885,6 +1885,7 @@ ul.accordion ul li a span {
 .footer-wiget-shape {
   display: inline-block;
   margin-right: 10px;
+  color: #fff
 }
 
 .footer-wiget-title h4 {
@@ -3410,7 +3411,7 @@ section.banner-section.style-three .banner-carousel .slide-item {
 
 .thrown-header-area.style-three::before {
   background: #fff;
-  width: 70%;
+  width: 100%;
   left: 0;
   right: 0;
   margin: auto;
