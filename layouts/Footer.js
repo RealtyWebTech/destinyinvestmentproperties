@@ -49,7 +49,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-3 col-md-6">
+          {/* <div className="col-lg-3 col-md-6">
             <div className="footer-wiget">
               <div className="footer-wiget-title">
                 <h4>Other Link</h4>
@@ -71,7 +71,7 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="col-lg-3 col-md-6 pr-0">
             <div className="foter-box">
               <div className="footer-wiget-icon">
@@ -102,7 +102,9 @@ const Footer = () => {
                     <a href="#">customer@destinyinvestmentproperties.co.uk</a>
                   </li>
                   <li>
-                    <a href="#">175 10h Street, Office 375 Berlin, De 21562</a>
+                    <a href="#">
+                      Flat 1, 170 Woodcote Road Wallington SM6 0PA London
+                    </a>
                   </li>
                 </ul>
               </div>

@@ -79,16 +79,18 @@ const page = () => {
                 <div className="about-bottom">
                   <div className="about-bottom-thumb">
                     <img
-                      src="assets/images/about/about-bottom.png"
+                      src="assets/images/about/profile-dp.png"
                       alt="image"
+                      width={93}
+                      height={93}
                     />
                   </div>
                   <div className="about-bottom-title">
-                    <h4>CEO Name</h4>
+                    <h4>Rhoda</h4>
                     <span>Director</span>
                   </div>
                   <div className="about-signiture">
-                    <img src="assets/images/about/signiture.png" alt="image" />
+                    {/* <img src="assets/images/about/signiture.png" alt="image" /> */}
                   </div>
                 </div>
               </div>
@@ -452,19 +454,143 @@ const page = () => {
                 <SwiperSlide>
                   <div className="testi-single-box">
                     <div className="testi-thumb">
-                      <img src="assets/images/testimonial/testi1.png" alt="" />
+                      <img
+                        src="assets/images/testimonial/avatar.png"
+                        width={161}
+                        height={"164px"}
+                        alt=""
+                      />
                     </div>
                     <div className="testi-content">
                       <div className="testi-title">
-                        <h4>Charlize Theron</h4>
+                        <h4>Emma R</h4>
                         <span>Trainer</span>
                       </div>
                       <div className="testi-discription">
                         <p>
-                          Foundation was established with a small idea that was
-                          incepted in the minds of its promoters in the year
-                          1994! We skilfully guide applicants for immigration
-                          process to any country they aspire to settle down
+                          This service has saved me so much time and effort. The
+                          curated deals are exactly what I need, and the
+                          customer support team is always helpful. A must-have
+                          for any serious investor.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="testi-icon-thumb">
+                      <img
+                        src="assets/images/testimonial/testi-icon.png"
+                        alt=""
+                      />
+                    </div>
+                    <div className="testi-rating">
+                      <i className="bi bi-star-fill" />
+                      <i className="bi bi-star-fill" />
+                      <i className="bi bi-star-fill" />
+                      <i className="bi bi-star-fill" />
+                      <i className="bi bi-star-fill" />
+                    </div>
+                  </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <div className="testi-single-box">
+                    <div className="testi-thumb">
+                      <img
+                        src="assets/images/testimonial/avatar.png"
+                        width={161}
+                        height={"164px"}
+                        alt=""
+                      />
+                    </div>
+                    <div className="testi-content">
+                      <div className="testi-title">
+                        <h4>Liam S</h4>
+                        <span>Trainer</span>
+                      </div>
+                      <div className="testi-discription">
+                        <p>
+                          I was skeptical at first, but after trying out this
+                          deal sourcing service, I'm impressed. The deals are
+                          well-vetted, and I've found several great
+                          opportunities that I wouldn't have discovered on my
+                          own.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="testi-icon-thumb">
+                      <img
+                        src="assets/images/testimonial/testi-icon.png"
+                        alt=""
+                      />
+                    </div>
+                    <div className="testi-rating">
+                      <i className="bi bi-star-fill" />
+                      <i className="bi bi-star-fill" />
+                      <i className="bi bi-star-fill" />
+                      <i className="bi bi-star-fill" />
+                      <i className="bi bi-star-fill" />
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="testi-single-box">
+                    <div className="testi-thumb">
+                      <img
+                        src="assets/images/testimonial/avatar.png"
+                        width={161}
+                        height={"164px"}
+                        alt=""
+                      />
+                    </div>
+                    <div className="testi-content">
+                      <div className="testi-title">
+                        <h4>Olivia T</h4>
+                        <span>Admin Executive</span>
+                      </div>
+                      <div className="testi-discription">
+                        <p>
+                          The best part about this service is the variety of
+                          deals. There's always something new and exciting. I've
+                          closed a few deals already and can't wait for more!
+                        </p>
+                      </div>
+                    </div>
+                    <div className="testi-icon-thumb">
+                      <img
+                        src="assets/images/testimonial/testi-icon.png"
+                        alt=""
+                      />
+                    </div>
+                    <div className="testi-rating">
+                      <i className="bi bi-star-fill" />
+                      <i className="bi bi-star-fill" />
+                      <i className="bi bi-star-fill" />
+                      <i className="bi bi-star-fill" />
+                      <i className="bi bi-star-fill" />
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="testi-single-box">
+                    <div className="testi-thumb">
+                      <img
+                        src="assets/images/testimonial/avatar.png"
+                        width={161}
+                        height={"164px"}
+                        alt=""
+                      />
+                    </div>
+                    <div className="testi-content">
+                      <div className="testi-title">
+                        <h4>William J</h4>
+                        <span>Trainer</span>
+                      </div>
+                      <div className="testi-discription">
+                        <p>
+                          The deal sourcing service offers a great selection of
+                          opportunities. I've been able to diversify my
+                          portfolio significantly since I started using it. The
+                          platform is easy to navigate, and the support is
+                          excellent.
                         </p>
                       </div>
                     </div>
@@ -490,151 +616,14 @@ const page = () => {
                     </div>
                     <div className="testi-content">
                       <div className="testi-title">
-                        <h4>Charlize Theron</h4>
+                        <h4>Noah B</h4>
                         <span>Admin Executive</span>
                       </div>
                       <div className="testi-discription">
                         <p>
-                          Foundation was established with a small idea that was
-                          incepted in the minds of its promoters in the year
-                          1994! We skilfully guide applicants for immigration
-                          process to any country they aspire to settle down
-                        </p>
-                      </div>
-                    </div>
-                    <div className="testi-icon-thumb">
-                      <img
-                        src="assets/images/testimonial/testi-icon.png"
-                        alt=""
-                      />
-                    </div>
-                    <div className="testi-rating">
-                      <i className="bi bi-star-fill" />
-                      <i className="bi bi-star-fill" />
-                      <i className="bi bi-star-fill" />
-                      <i className="bi bi-star-fill" />
-                      <i className="bi bi-star-fill" />
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="testi-single-box">
-                    <div className="testi-thumb">
-                      <img src="assets/images/testimonial/testi1.png" alt="" />
-                    </div>
-                    <div className="testi-content">
-                      <div className="testi-title">
-                        <h4>Charlize Theron</h4>
-                        <span>Trainer</span>
-                      </div>
-                      <div className="testi-discription">
-                        <p>
-                          Foundation was established with a small idea that was
-                          incepted in the minds of its promoters in the year
-                          1994! We skilfully guide applicants for immigration
-                          process to any country they aspire to settle down
-                        </p>
-                      </div>
-                    </div>
-                    <div className="testi-icon-thumb">
-                      <img
-                        src="assets/images/testimonial/testi-icon.png"
-                        alt=""
-                      />
-                    </div>
-                    <div className="testi-rating">
-                      <i className="bi bi-star-fill" />
-                      <i className="bi bi-star-fill" />
-                      <i className="bi bi-star-fill" />
-                      <i className="bi bi-star-fill" />
-                      <i className="bi bi-star-fill" />
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="testi-single-box">
-                    <div className="testi-thumb">
-                      <img src="assets/images/testimonial/testi2.png" alt="" />
-                    </div>
-                    <div className="testi-content">
-                      <div className="testi-title">
-                        <h4>Charlize Theron</h4>
-                        <span>Admin Executive</span>
-                      </div>
-                      <div className="testi-discription">
-                        <p>
-                          Foundation was established with a small idea that was
-                          incepted in the minds of its promoters in the year
-                          1994! We skilfully guide applicants for immigration
-                          process to any country they aspire to settle down
-                        </p>
-                      </div>
-                    </div>
-                    <div className="testi-icon-thumb">
-                      <img
-                        src="assets/images/testimonial/testi-icon.png"
-                        alt=""
-                      />
-                    </div>
-                    <div className="testi-rating">
-                      <i className="bi bi-star-fill" />
-                      <i className="bi bi-star-fill" />
-                      <i className="bi bi-star-fill" />
-                      <i className="bi bi-star-fill" />
-                      <i className="bi bi-star-fill" />
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="testi-single-box">
-                    <div className="testi-thumb">
-                      <img src="assets/images/testimonial/testi1.png" alt="" />
-                    </div>
-                    <div className="testi-content">
-                      <div className="testi-title">
-                        <h4>Charlize Theron</h4>
-                        <span>Trainer</span>
-                      </div>
-                      <div className="testi-discription">
-                        <p>
-                          Foundation was established with a small idea that was
-                          incepted in the minds of its promoters in the year
-                          1994! We skilfully guide applicants for immigration
-                          process to any country they aspire to settle down
-                        </p>
-                      </div>
-                    </div>
-                    <div className="testi-icon-thumb">
-                      <img
-                        src="assets/images/testimonial/testi-icon.png"
-                        alt=""
-                      />
-                    </div>
-                    <div className="testi-rating">
-                      <i className="bi bi-star-fill" />
-                      <i className="bi bi-star-fill" />
-                      <i className="bi bi-star-fill" />
-                      <i className="bi bi-star-fill" />
-                      <i className="bi bi-star-fill" />
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="testi-single-box">
-                    <div className="testi-thumb">
-                      <img src="assets/images/testimonial/testi2.png" alt="" />
-                    </div>
-                    <div className="testi-content">
-                      <div className="testi-title">
-                        <h4>Charlize Theron</h4>
-                        <span>Admin Executive</span>
-                      </div>
-                      <div className="testi-discription">
-                        <p>
-                          Foundation was established with a small idea that was
-                          incepted in the minds of its promoters in the year
-                          1994! We skilfully guide applicants for immigration
-                          process to any country they aspire to settle down
+                          Efficient, reliable, and worth every penny. This deal
+                          sourcing service has streamlined my investment process
+                          and connected me with some incredible opportunities
                         </p>
                       </div>
                     </div>

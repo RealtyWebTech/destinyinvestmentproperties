@@ -25,37 +25,51 @@ const page = () => {
                   <h4>Destiny Investment Properties</h4>
                 </div>
                 <div className="about-main-title">
-                  <h2>Connecting your Business</h2>
-                  <h2>With The World</h2>
+                  <h2>Vision</h2>
+                </div>
+                <div className="about-discribtion">
+                  <p>
+                    Our vision is to revolutionise property management and deal
+                    sourcing in the United Kingdom by transforming real estate
+                    into thriving, stress-free investments that benefit both
+                    landlords, investors and the community.
+                  </p>
+                </div>
+                <div className="about-main-title">
+                  <h2>Mission</h2>
+                </div>
+                <div className="about-discribtion">
+                  <p>
+                    Our mission is to empower entrepreneurs, investors, and
+                    dealmakers to connect and transact with ease by offering a
+                    thorough and intuitive deal-sourcing platform. Our goal is
+                    to become the preferred location for transaction flow,
+                    offering a carefully chosen range of superior investment
+                    options.
+                  </p>
+                </div>
+                <div className="about-main-title">
+                  <h2>What We Do</h2>
+                  {/* <h2>With The World</h2> */}
                 </div>
               </div>
               <div className="about-content">
                 <div className="about-discribtion">
                   <p>
-                    Destiny Investment Properties has a core philosophy of
-                    creating an ethical and credible Deal Sourcing practice,
-                    with the intention of working with investors for the
-                    long-term. Our organization’s combined passion for this
-                    vision enables us and our Investors to obtain significant
-                    results. Our in-house team of experts, together with
-                    partners and local power teams has helped foster
-                    relationships built on trust and longevity both internally
-                    and externally. This has led to being recognised in the
-                    industry for our efforts. We are proud to make property
-                    investing professional, seamless and simple for our
-                    Investors.
+                    Destiny Investment Properties specializes in relieving
+                    landlords of their burden. We manage your property from
+                    start to finish, assuring a consistent rental income, no
+                    maintenance issues, and no gaps in occupancy. We transform
+                    your homes into high-yield assets by modifying and
+                    converting them into serviced accommodations, Houses in
+                    Multiple Occupation (HMO), or short-term rental properties
+                    like Airbnb. Our complete strategy not only ensures your
+                    income but also increases the value and appeal of your
+                    property, all while giving you peace of mind that your
+                    investment is in capable hands
                   </p>
                 </div>
-                {/* <div className="about-title">
-                  <h4>We Design &amp; Build Powerful Websites</h4>
-                </div>
-                <div className="about-discribtion">
-                  <p>
-                    Variations of passages of lorem in free market to available,
-                    but the majority have suffered alteration in some form, by
-                    injected humour,or randomised words
-                  </p>
-                </div> */}
+
                 <div className="row">
                   <div className="col-lg-6 col-md-6">
                     {/*start about single box */}

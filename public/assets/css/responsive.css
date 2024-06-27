@@ -399,6 +399,10 @@
   .team-details-author-experience ul li .value {
     font-size: 13px;
   }
+
+  .protfolio-title h5 {
+    font-size: 16px !important;
+  }
 }
 
 /* Normal desktop :992px. */
@@ -525,6 +529,10 @@
     top: 50%;
     position: absolute;
     transform: translateY(-50%);
+  }
+
+  .protfolio-title h5 {
+    font-size: 16px !important;
   }
 
   /* team area */
@@ -1133,7 +1141,7 @@
   }
 
   .sidebar-menu {
-    display: inherit;
+    display: block !important;
   }
 
   /* topbar area */
@@ -1933,6 +1941,10 @@
   .error-area {
     padding: 25px 0 76px;
   }
+
+  .protfolio-title h5 {
+    font-size: 16px !important;
+  }
 }
 
 /* Tablet desktop :600px. */
@@ -1942,13 +1954,17 @@
   }
 
   .sidebar-menu {
-    display: inherit;
+    display: block !important;
   }
 
   /* topbar area */
 
   .thrown-topbar-area {
     display: none;
+  }
+  
+  .protfolio-title h5 {
+    font-size: 16px !important;
   }
 
   /* header area */
@@ -2893,7 +2909,7 @@
   }
 
   .sidebar-menu {
-    display: inherit;
+    display: block !important;
   }
 
   /* topbar area */
@@ -2921,6 +2937,10 @@
 
   .slider-content {
     width: 100%;
+  }
+
+  .protfolio-title h5 {
+    font-size: 16px !important;
   }
 
   .slider-main-title h1 {
@@ -3856,7 +3876,7 @@
   }
 
   .sidebar-menu {
-    display: inherit;
+    display: block !important;
   }
 
   /* topbar area */
@@ -4206,6 +4226,10 @@
 
   .choose-content p {
     width: 83%;
+  }
+
+  .protfolio-title h5 {
+    font-size: 16px !important;
   }
 
   .single-video.style-two {
@@ -4932,7 +4956,7 @@
   }
 
   .sidebar-menu {
-    display: inherit;
+    display: block !important;
   }
 
   /* topbar area */
@@ -5254,6 +5278,10 @@
 
   .footer-area {
     padding: 73px 0 0px;
+  }
+
+  .protfolio-title h5 {
+    font-size: 16px !important;
   }
 
   .footer-wiget {

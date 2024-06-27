@@ -40,8 +40,8 @@ const page = () => {
                 </div>
                 <div className="contact-content">
                   <h4>Address</h4>
-                  <span>27 Division St, New York</span>
-                  <span>NY 10002, USA</span>
+                  <span>Flat 1, 170 Woodcote Road Wallington</span>
+                  <span>SM6 0PA London</span>
                 </div>
               </div>
             </div>
@@ -55,7 +55,8 @@ const page = () => {
               <form
                 action="https://formspree.io/f/myyleorq"
                 method="POST"
-                id="it-form">
+                id="it-form"
+              >
                 <div className="row">
                   <div className="col-lg-6 col-md-6">
                     <div className="form-box">
