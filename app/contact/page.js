@@ -1,7 +1,30 @@
-import BrandSlider from "@/components/BrandSlider";
+"use client";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+
 import PageBanner from "@/components/PageBanner";
 import ThrownLayout from "@/layouts/ThrownLayout";
+
 const page = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", form.current, {
+        publicKey: "YOUR_PUBLIC_KEY",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
+
   return (
     <ThrownLayout>
       <PageBanner pageName={"Contact"} />
@@ -53,10 +76,11 @@ const page = () => {
                 <h2>feel free to Contact</h2>
               </div>
               <form
+                ref={form}
+                onSubmit={sendEmail}
                 action="https://formspree.io/f/myyleorq"
                 method="POST"
-                id="it-form"
-              >
+                id="it-form">
                 <div className="row">
                   <div className="col-lg-6 col-md-6">
                     <div className="form-box">
@@ -70,14 +94,18 @@ const page = () => {
                   </div>
                   <div className="col-lg-6 col-md-6">
                     <div className="form-box">
-                      <input type="text" name="phone" placeholder="Phone" />
+                      <input
+                        type="text"
+                        name="user_phone"
+                        placeholder="Phone"
+                      />
                     </div>
                   </div>
                   <div className="col-lg-6 col-md-6">
                     <div className="form-box">
                       <input
                         type="text"
-                        name="email"
+                        name="user_email"
                         placeholder="Email Address"
                       />
                     </div>
@@ -95,7 +123,7 @@ const page = () => {
                   <div className="col-lg-12 col-md-12">
                     <div className="form-box">
                       <textarea
-                        name="massage"
+                        name="user_massage"
                         id="massage"
                         cols={30}
                         rows={10}

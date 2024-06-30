@@ -77,7 +77,7 @@ const Footer = () => {
               <div className="footer-wiget-icon">
                 <ul>
                   <li>
-                    <a href="#">
+                    <a href="https://www.facebook.com/Dipropertiesltd/">
                       <i className="fab fa-facebook-f" />
                     </a>
                   </li>
@@ -87,7 +87,7 @@ const Footer = () => {
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="https://www.instagram.com/dipropertiesltd/">
                       <i className="fab fa-instagram" />
                     </a>
                   </li>

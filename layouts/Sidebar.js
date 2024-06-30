@@ -16,8 +16,7 @@ const Sidebar = () => {
               onClick={(e) => {
                 e.preventDefault();
                 thrownutility.sidebarToggle();
-              }}
-            >
+              }}>
               <i className="bi bi-x-lg" />
             </a>
           </div>
@@ -81,16 +80,22 @@ const Sidebar = () => {
                 </div>
                 <ul className="social-box">
                   <li className="facebook">
-                    <a href="#" className="fab fa-facebook-f" />
+                    <a
+                      href="https://www.facebook.com/Dipropertiesltd/"
+                      className="fab fa-facebook-f"
+                    />
                   </li>
                   <li className="twitter">
                     <a href="#" className="fab fa-instagram" />
                   </li>
                   <li className="linkedin">
-                    <a href="#" className="fab fa-twitter" />
+                    <a href="" className="fab fa-twitter" />
                   </li>
                   <li className="instagram">
-                    <a href="#" className="fab fa-pinterest-p" />
+                    <a
+                      href="https://www.instagram.com/dipropertiesltd/"
+                      className="fab fa-pinterest-p"
+                    />
                   </li>
                   <li className="youtube">
                     <a href="#" className="fab fa-linkedin-in" />
