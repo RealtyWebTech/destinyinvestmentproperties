@@ -8,10 +8,10 @@
     position: relative;
     display: block;
     color: #fff;
-    background: #0154F7;
-    -moz-box-shadow: 0 1px 0 #0154F7 inset, 0 -1px 0 #0154F7 inset;
-    -webkit-box-shadow: 0 1px 0 #0154F7 inset, 0 -1px 0 #0154F7 inset;
-    box-shadow: 0 1px 0 #0154F7 inset, 0 -1px 0 #0154F7 inset;
+    background: #185590;
+    -moz-box-shadow: 0 1px 0 #185590 inset, 0 -1px 0 #185590 inset;
+    -webkit-box-shadow: 0 1px 0 #185590 inset, 0 -1px 0 #185590 inset;
+    box-shadow: 0 1px 0 #185590 inset, 0 -1px 0 #185590 inset;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
     padding: 10px;
 }

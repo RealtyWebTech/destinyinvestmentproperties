@@ -86,9 +86,12 @@ const Sidebar = () => {
                     />
                   </li>
                   <li className="twitter">
-                    <a href="#" className="fab fa-instagram" />
+                    <a
+                      href="https://www.instagram.com/dipropertiesltd/"
+                      className="fab fa-instagram"
+                    />
                   </li>
-                  <li className="linkedin">
+                  {/* <li className="linkedin">
                     <a href="" className="fab fa-twitter" />
                   </li>
                   <li className="instagram">
@@ -96,10 +99,10 @@ const Sidebar = () => {
                       href="https://www.instagram.com/dipropertiesltd/"
                       className="fab fa-pinterest-p"
                     />
-                  </li>
-                  <li className="youtube">
+                  </li> */}
+                  {/* <li className="youtube">
                     <a href="#" className="fab fa-linkedin-in" />
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
