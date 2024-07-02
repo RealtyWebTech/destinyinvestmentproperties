@@ -32,7 +32,7 @@ const Header1 = ({ dark }) => {
   return (
     <Fragment>
       {/* <TopBar /> */}
-      <MobileMenu />
+      {/* <MobileMenu /> */}
       <Sidebar />
 
       <div

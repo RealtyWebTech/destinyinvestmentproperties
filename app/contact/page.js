@@ -1,7 +1,30 @@
-import BrandSlider from "@/components/BrandSlider";
+"use client";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+
 import PageBanner from "@/components/PageBanner";
 import ThrownLayout from "@/layouts/ThrownLayout";
+
 const page = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", form.current, {
+        publicKey: "YOUR_PUBLIC_KEY",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
+
   return (
     <ThrownLayout>
       <PageBanner pageName={"Contact"} />
@@ -40,8 +63,8 @@ const page = () => {
                 </div>
                 <div className="contact-content">
                   <h4>Address</h4>
-                  <span>27 Division St, New York</span>
-                  <span>NY 10002, USA</span>
+                  <span>Flat 1, 170 Woodcote Road Wallington</span>
+                  <span>SM6 0PA London</span>
                 </div>
               </div>
             </div>
@@ -53,6 +76,8 @@ const page = () => {
                 <h2>feel free to Contact</h2>
               </div>
               <form
+                ref={form}
+                onSubmit={sendEmail}
                 action="https://formspree.io/f/myyleorq"
                 method="POST"
                 id="it-form">
@@ -69,14 +94,18 @@ const page = () => {
                   </div>
                   <div className="col-lg-6 col-md-6">
                     <div className="form-box">
-                      <input type="text" name="phone" placeholder="Phone" />
+                      <input
+                        type="text"
+                        name="user_phone"
+                        placeholder="Phone"
+                      />
                     </div>
                   </div>
                   <div className="col-lg-6 col-md-6">
                     <div className="form-box">
                       <input
                         type="text"
-                        name="email"
+                        name="user_email"
                         placeholder="Email Address"
                       />
                     </div>
@@ -94,7 +123,7 @@ const page = () => {
                   <div className="col-lg-12 col-md-12">
                     <div className="form-box">
                       <textarea
-                        name="massage"
+                        name="user_massage"
                         id="massage"
                         cols={30}
                         rows={10}
@@ -126,7 +155,7 @@ const page = () => {
           <div className="row">
             <div className="col-lg-12 col-md-12">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7496149.95373021!2d85.84621250756469!3d23.452185887261447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30adaaed80e18ba7%3A0xf2d28e0c4e1fc6b!2sBangladesh!5e0!3m2!1sen!2sbd!4v1635150422284!5m2!1sen!2sbd"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158858.182370726!2d-0.10159865000000001!3d51.52864165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2sin!4v1719746285540!5m2!1sen!2sin"
                 width={1920}
                 height={608}
                 style={{ border: 0 }}
