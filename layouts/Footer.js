@@ -45,6 +45,12 @@ const Footer = () => {
                   <li>
                     <a href="#"> Contact</a>
                   </li>
+                  <li>
+                    <a href="#"> Serviced Accommodation</a>
+                  </li>
+                  <li>
+                    <a href="#"> HMO</a>
+                  </li>
                 </ul>
               </div>
             </div>
