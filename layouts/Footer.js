@@ -82,8 +82,13 @@ const Footer = () => {
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="https://x.com/dipropertiesltd">
                       <i className="fab fa-twitter" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://wa.me/+447780453714">
+                      <i className="fab fa-whatsapp" />
                     </a>
                   </li>
                   <li>
