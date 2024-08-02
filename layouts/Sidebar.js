@@ -46,6 +46,17 @@ const Sidebar = () => {
                     </li>
 
                     <li className="dropdown">
+                      <Link legacyBehavior href="hmo">
+                        <a data-toggle="dropdown">HMO</a>
+                      </Link>
+                    </li>
+
+                    <li className="dropdown">
+                      <Link legacyBehavior href="serviced-accommodation">
+                        <a data-toggle="dropdown">Serviced Accommodation</a>
+                      </Link>
+                    </li>
+                    <li className="dropdown">
                       <Link legacyBehavior href="about">
                         <a data-toggle="dropdown">About</a>
                       </Link>

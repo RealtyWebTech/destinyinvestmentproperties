@@ -37,19 +37,19 @@ const Footer = () => {
               <div className="footer-wiget-menu">
                 <ul>
                   <li>
-                    <a href="#"> About us</a>
+                    <a href="about"> About us</a>
                   </li>
                   <li>
-                    <a href="#"> Deals</a>
+                    <a href="deals"> Deals</a>
                   </li>
                   <li>
-                    <a href="#"> Contact</a>
+                    <a href="contact"> Contact</a>
                   </li>
                   <li>
-                    <a href="#"> Serviced Accommodation</a>
+                    <a href="serviced-accommodation"> Serviced Accommodation</a>
                   </li>
                   <li>
-                    <a href="#"> HMO</a>
+                    <a href="hmo"> HMO</a>
                   </li>
                 </ul>
               </div>
