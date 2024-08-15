@@ -14,9 +14,9 @@ const page = () => {
     e.preventDefault();
     setIsLoading(true);
 
-    const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID;
-    const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID;
-    const publicKey = process.env.NEXT_PUBLIC_YOUR_PUBLIC_KEY;
+    const serviceId = "service_lug9w1g";
+    const templateId = "template_9u366cf";
+    const publicKey = "1W_eKa0bKaqGdBJiM";
 
     console.log(serviceId, templateId, publicKey, form.current);
 
