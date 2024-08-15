@@ -18,8 +18,6 @@ const page = () => {
     const templateId = "template_9u366cf";
     const publicKey = "1W_eKa0bKaqGdBJiM";
 
-    console.log(serviceId, templateId, publicKey, form.current);
-
     emailjs.sendForm(serviceId, templateId, form.current, publicKey).then(
       () => {
         console.log("SUCCESS!");
