@@ -86,7 +86,7 @@ const page = () => {
                     />
                   </div>
                   <div className="about-bottom-title">
-                    <h4>Rhoda</h4>
+                    <h4>Rhoda Igene</h4>
                     <span>Director</span>
                   </div>
                   <div className="about-signiture">

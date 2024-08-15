@@ -4,7 +4,7 @@ import ThrownLayout from "@/layouts/ThrownLayout";
 const page = () => {
   return (
     <ThrownLayout>
-      <PageBanner pageName={"Houses in Multiple Occupation (HMO)"} />
+      <PageBanner pageName={"Serviced Accommodation"} />
       {/*==================================================*/}
       {/* Start Thrown About Area */}
       {/*==================================================*/}
