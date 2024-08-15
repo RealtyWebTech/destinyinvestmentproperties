@@ -1,28 +1,39 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 import PageBanner from "@/components/PageBanner";
 import ThrownLayout from "@/layouts/ThrownLayout";
 
 const page = () => {
+  const [buttonText, setButtonText] = useState("Send Message");
+  const [isLoading, setIsLoading] = useState(false);
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setIsLoading(true);
 
-    emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", form.current, {
-        publicKey: "YOUR_PUBLIC_KEY",
-      })
-      .then(
-        () => {
-          console.log("SUCCESS!");
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-        }
-      );
+    const serviceId = "service_lug9w1g";
+    const templateId = "template_9u366cf";
+    const publicKey = "1W_eKa0bKaqGdBJiM";
+
+    emailjs.sendForm(serviceId, templateId, form.current, publicKey).then(
+      () => {
+        console.log("SUCCESS!");
+        e.target.reset();
+        setButtonText("Success");
+        setIsLoading(false);
+        e.target.reset();
+
+        setTimeout(() => {
+          setButtonText("Send Message");
+        }, 3000);
+      },
+      (error) => {
+        console.log("FAILED...", error);
+      }
+    );
   };
 
   return (
@@ -75,16 +86,16 @@ const page = () => {
                 <h2>Have be any question?</h2>
                 <h2>feel free to Contact</h2>
               </div>
-              <form
-                ref={form}
-                onSubmit={sendEmail}
-                action="https://formspree.io/f/myyleorq"
-                method="POST"
-                id="it-form">
+              <form ref={form} onSubmit={sendEmail} method="POST" id="it-form">
                 <div className="row">
                   <div className="col-lg-6 col-md-6">
                     <div className="form-box">
-                      <input type="text" name="name" placeholder="First Name" />
+                      <input
+                        required
+                        type="text"
+                        name="from_name"
+                        placeholder="First Name"
+                      />
                     </div>
                   </div>
                   <div className="col-lg-6 col-md-6">
@@ -95,8 +106,9 @@ const page = () => {
                   <div className="col-lg-6 col-md-6">
                     <div className="form-box">
                       <input
+                        required
                         type="text"
-                        name="user_phone"
+                        name="from_phone"
                         placeholder="Phone"
                       />
                     </div>
@@ -104,8 +116,9 @@ const page = () => {
                   <div className="col-lg-6 col-md-6">
                     <div className="form-box">
                       <input
+                        required
                         type="text"
-                        name="user_email"
+                        name="from_email"
                         placeholder="Email Address"
                       />
                     </div>
@@ -117,13 +130,18 @@ const page = () => {
                   </div>
                   <div className="col-lg-6 col-md-6">
                     <div className="form-box">
-                      <input type="text" name="website" placeholder="Website" />
+                      <input
+                        type="text"
+                        name="from_website"
+                        placeholder="Website"
+                      />
                     </div>
                   </div>
                   <div className="col-lg-12 col-md-12">
                     <div className="form-box">
                       <textarea
-                        name="user_massage"
+                        required
+                        name="message"
                         id="massage"
                         cols={30}
                         rows={10}
@@ -134,7 +152,9 @@ const page = () => {
                   </div>
                   <div className="col-lg-12 col-md-12">
                     <div className="form-box-button inner">
-                      <button type="Submit">Send Message</button>
+                      <button value={"send"} type="submit">
+                        {isLoading ? "Sending..." : buttonText}
+                      </button>
                     </div>
                   </div>
                 </div>

@@ -37,7 +37,8 @@ const Header1 = ({ dark }) => {
 
       <div
         className={`thrown-header-area style-three ${dark ? "dark" : ""}`}
-        id={dark ? "navbar" : "sticky-header"}>
+        id={dark ? "navbar" : "sticky-header"}
+      >
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-3">
@@ -117,7 +118,8 @@ const Header3 = ({ dark }) => {
   return (
     <div
       className={`thrown-header-area style-three ${dark ? "dark" : ""}`}
-      id={dark ? "navbar" : "sticky-header"}>
+      id={dark ? "navbar" : "sticky-header"}
+    >
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-3">
@@ -163,7 +165,8 @@ const Header4 = ({ dark }) => {
       <TopBar2 />
       <div
         className={`thrown-header-area style-five ${dark ? "dark" : ""}`}
-        id={dark ? "navbar" : "sticky-header"}>
+        id={dark ? "navbar" : "sticky-header"}
+      >
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-3">
@@ -315,7 +318,8 @@ const MobileMenu = () => {
               onClick={(e) => {
                 e.preventDefault();
                 thrownutility.sidebarToggle();
-              }}>
+              }}
+            >
               <i className="bi bi-justify-right" />
             </a>
           </div>
@@ -337,6 +341,12 @@ const Nav = () => {
         </Link>
       </li>
       <li>
+        <a href="serviced-accommodation"> Serviced Accommodation</a>
+      </li>
+      <li>
+        <a href="hmo"> HMO</a>
+      </li>
+      <li>
         <Link legacyBehavior href="about">
           About
         </Link>
@@ -346,6 +356,7 @@ const Nav = () => {
           Contact
         </Link>
       </li>
+      
       {/* <li>
         <Link legacyBehavior href="#">
           Contact

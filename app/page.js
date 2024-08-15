@@ -30,7 +30,7 @@ const page = () => {
                     <h1>for Future Success</h1>
                   </div>
                   <div className="thrown-btn slider three">
-                    <a className="header-button">
+                    <a href="about" className="header-button">
                       Read More <span />
                     </a>
                   </div>
@@ -86,7 +86,7 @@ const page = () => {
                     />
                   </div>
                   <div className="about-bottom-title">
-                    <h4>Rhoda</h4>
+                    <h4>Rhoda Igene</h4>
                     <span>Director</span>
                   </div>
                   <div className="about-signiture">

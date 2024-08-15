@@ -16,7 +16,8 @@ const Sidebar = () => {
               onClick={(e) => {
                 e.preventDefault();
                 thrownutility.sidebarToggle();
-              }}>
+              }}
+            >
               <i className="bi bi-x-lg" />
             </a>
           </div>
@@ -45,6 +46,17 @@ const Sidebar = () => {
                     </li>
 
                     <li className="dropdown">
+                      <Link legacyBehavior href="hmo">
+                        <a data-toggle="dropdown">HMO</a>
+                      </Link>
+                    </li>
+
+                    <li className="dropdown">
+                      <Link legacyBehavior href="serviced-accommodation">
+                        <a data-toggle="dropdown">Serviced Accommodation</a>
+                      </Link>
+                    </li>
+                    <li className="dropdown">
                       <Link legacyBehavior href="about">
                         <a data-toggle="dropdown">About</a>
                       </Link>
@@ -68,13 +80,14 @@ const Sidebar = () => {
                       <i className="bi bi-telephone-fill" />
                       (+44) 7780453714
                     </li>
+
                     <li>
                       <i className="bi bi-envelope" />{" "}
                       customer@destinyinvestmentproperties.co.uk
                     </li>
                     <li>
-                      <i className="bi bi-alarm-fill" /> Week Days: 08.00 to
-                      10.00
+                      <i className="bi bi-alarm-fill" /> Week Days: 08.00 AM to
+                      08.00 PM
                     </li>
                   </ul>
                 </div>
@@ -91,10 +104,18 @@ const Sidebar = () => {
                       className="fab fa-instagram"
                     />
                   </li>
-                  {/* <li className="linkedin">
-                    <a href="" className="fab fa-twitter" />
+                  <li className="linkedin">
+                    <a
+                      href="https://x.com/dipropertiesltd"
+                      className="fab fa-twitter"
+                    />
                   </li>
-                  <li className="instagram">
+                  <li>
+                    <a href="https://wa.me/+447780453714">
+                      <i className="fab fa-whatsapp" />
+                    </a>
+                  </li>
+                  {/* <li className="instagram">
                     <a
                       href="https://www.instagram.com/dipropertiesltd/"
                       className="fab fa-pinterest-p"
